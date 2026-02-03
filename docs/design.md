@@ -18,7 +18,14 @@ Design Considerations
 
 Wireframe
 https://whimsical.com/map-442xFzuVBRbKH3K29SH9Lg
+
 Wireframe Explained
+
+Wireframe 1 - Search and Results 
+The first wireframe is the starting point of the car park finder web application. Users can search for car parks by name or area while also being able to use filters to filter and narrow down outcomes. Also, on the top of the wireframe helps users perform a text-based speech to enter names of car parks or a specific location such as "Bristol" to help find a local place to park. The filters function on the left support users who want to limit findings on things such as car park type which quickly helps to remove unwanted options. The actual main areaa shown on the wireframe starts of empty but has information to help users navigate and take action. View all results button make sure that users can still see options if they are not sure on which filters to use and what they do. 
+
+Wireframe 2 - Car Park Finder : Results(List View)
+
 
 
 
