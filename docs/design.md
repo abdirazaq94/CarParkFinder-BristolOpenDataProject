@@ -28,7 +28,11 @@ Wireframe 2 - Car Park Finder : Results(List View)
 The second wireframe shows the result of the users search and is presented in a structured list format which is mosr suitable for assessing different car parks at once. The consistent search bar and filters allow users to adjust their results without having to go back to the previous screen, aiding an effective and seamless experience. Each car park entry gives key information such as distance, availability and open status giving users rapid entry providing an option that suits their needs. The sorting options such as sorting by nearest location, which helps strategic judgement for users who put nearest parking first. 
 
 Wireframe 3 – Car Park Finder : Map View
-The third wireframe gives a more visual and location centered way of finding available car parks. The mao view is very useful for users who are using maps to browse in real time and want to view how car parks are placed globally. - continue from pins on the map... 
+The third wireframe gives a more visual and location centered way of finding available car parks. The map view is very useful for users who are using maps to browse in real time and want to view how car parks are placed around the local area. Also, with the map, the addition of pins are helpful for user as they show carparks precise location. When the user chooses a pin, a summary of that chosen csr park appears giving the user effective information without being redirected to another page. At the top of this wireframe there is two option of list view and map view giving users different option of how they can see information is presented. 
+
+Wireframe 4 - Car Park Finder - Car Park Details
+This wireframe is entirely dedicated to showing the user all the correct and needed information once they reach the decision for a final parking spot. As you can see the layout is 
+ 
 
 
 
