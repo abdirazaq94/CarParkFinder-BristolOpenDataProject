@@ -31,8 +31,14 @@ Wireframe 3 – Car Park Finder : Map View
 The third wireframe gives a more visual and location centered way of finding available car parks. The map view is very useful for users who are using maps to browse in real time and want to view how car parks are placed around the local area. Also, with the map, the addition of pins are helpful for user as they show carparks precise location. When the user chooses a pin, a summary of that chosen csr park appears giving the user effective information without being redirected to another page. At the top of this wireframe there is two option of list view and map view giving users different option of how they can see information is presented. 
 
 Wireframe 4 - Car Park Finder - Car Park Details
-This wireframe is entirely dedicated to showing the user all the correct and needed information once they reach the decision for a final parking spot. As you can see the layout is 
- 
+This wireframe is entirely dedicated to showing the user all the correct and needed information once they reach the decision for a final parking spot. As you can see the layout is focusing on clarity by prominently displaying the name of the car park and its current standings whihc allows users to see and instantly understanding availability. Such detailed information such as the time of opening, price, how much space is available, and accessibility features are put in one place. By then putting them in one area, this reduces the need for any extra navigation. Another option that is used to avoid futher navigation is the ability to save car parks to favourites. In this wireframe, navigation is options and features are distinctly presented to permit users a option to return to results or begin navigation, strengthening the screen of the wireframe as a decision point withing the users experience. 
+
+Wireframe 5 - Car Park Finder: No results found
+The fifth wireframe addresses a key part of users experience by clearly communicating when no car parks have been matched by what they have put in their criteria. Instead of being greeted with a plain black screen or the web application crashing, the interface lets the user know by showing a message which states "No Car Parks Match Your Filters". Actionable options such as resetting filters or coming back to the search screen aid users to find a fix for thei issues. This approach lowers the chance off getting off the web application and encourges user interaction. 
+
+Wireframe 6 - Car Park Finder: Loading & Error State
+The sixth is intended to 
+
 
 
 
