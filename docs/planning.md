@@ -34,9 +34,23 @@ There is also the chances that users may deny their geolocation permissions on t
 
 As well as this, theres a risk of the data set not displayong the actual car parks itself. This presents a meduim risk and medium impact risk. To adresss this roadbloc, the project scope will be clearly made to reflect that the web application itself only shows data given from the data set. 
 
+## Project Scope
 <img width="591" height="839" alt="Screenshot 2026-04-22 at 19 32 38" src="https://github.com/user-attachments/assets/035ebf14-b347-465e-a91c-03140667fa2f" />
 
-## Project Scope
-TODO: Scope of the System of Interest. Include a bullet list of things from your context diagram that are in scope.
+The following items are in scope for this project:
+- Finding and showing car park data from the Bristol Open Data API.
+- Searching for car parks by name or area.
+- Filtering car parks by type(Multi story, Surface & On Street) ect.
+- Displaying car park details (Name , Area & Operator) ect.
+- Geo-location based functions to find neareast car parks.
+- Theres a "View All Results" function to reset filters.
+- Valid HTML web application with CSS Stylesheet.
+- Documentation following the correct SDLC stages (Planning, Requirements & Design)
+
+The following items are out of scope:
+- User accounts or saved favourites.
+- Real time live updating information on the ocupancy of the car park.
+- Processing of payment for the booking.
+- Backend server and databases.
 
 ![Insert your Context Diagram Here](images/context.png)
