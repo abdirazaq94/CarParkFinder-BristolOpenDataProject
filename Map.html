@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title> 
+            Car Park Finder
+        </title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+                crossorigin="">
+        </script>
+        <script>
+            let markers = [];
+            let map;
+                window.onload = function() {
+                    map = L.map('map').setView([51.4545, -2.5879], 13);
+                    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', 
+                    {
+                        maxZoom: 19,
+                        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                    }).addTo(map);
+
+                    query();
+                }
+            let CarparkData= [];
+            function outputTable(stuff){
+                                    CarparkData = stuff.features;
+                                    for (let i = 0; i < CarparkData.length; i++) {
+                                                                                let c= CarparkData[i].geometry;
+                                                                                 let marker = L.marker([c.y, c.x]).addTo(map);
+                                                                                 marker.data = CarparkData[i].attributes;
+                                                                                 markers.push(marker);
+                                                                                 marker.bindPopup(CarparkData[i].attributes.NAME);                                        
+                                                                                }
+            }
+            function query(){
+                document.getElementById("loading").style.display = "block";
+                            let url= "https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query?where=1%3D1&outFields=NAME,NUMBER_LEVELS,AREA_NAME,OPERATOR_NAME,SPACES,OPERATING_TIMES,TYPE_DESCRIPTION,CCTV&outSR=4326&f=json";
+                            fetch(url)
+                            .then(response => response.json())
+                            .then(outputTable)
+                            .finally(() => {
+                                document.getElementById("loading").style.display = "none";
+                            })
+            
+            }
+            
+            function markersearchbar(){
+                let typed = document.getElementById("searchbar").value.toLowerCase();
+                let multi = document.getElementById("multi").checked;
+                let surface = document.getElementById("surface").checked;
+                let onstreet = document.getElementById("onstreet").checked;
+                let camera = document.getElementById("camera").checked;
+                for (let i=0; i <markers.length; i++){
+                    map.removeLayer(markers[i]);    
+                    
+                    let a= markers[i].data;
+                    let b= markers[i];
+                    let name = a.NAME.toLowerCase();
+                    let area = a.AREA_NAME.toLowerCase();
+                    let category= a.NUMBER_LEVELS.toLowerCase();
+                    let cctv = a.CCTV.toLowerCase();
+                    
+                    let matchMulti = !multi || category.includes("mscp");
+                    let matchSurface = !surface || category.includes("surface");
+                    let matchOnstreet = !onstreet || category.includes("u/ground");
+                    let matchCamera = !camera || cctv.includes("yes");
+
+                    let searches= name.includes(typed) || area.includes(typed);
+                    let filters= matchMulti && matchSurface && matchOnstreet && matchCamera;
+                    
+                    if (searches && filters){
+                        map.addLayer(b); 
+                    }
+                   
+                }
+            }    
+        </script>
+    </head>
+    <body>
+        <header>
+        </header>
+        <div class="heading">
+                    <div class="title">
+                                        Car Park Finder
+                    </div>
+        <div class="loading" id="loading">
+            Loading car parks...
+        </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search car park or area "id="searchbar">
+                        <button  onclick="markersearchbar()">Search</button>                                        
+                    </div>
+        </div>
+        <hr class="horizontal">
+        <div class="leftbox">
+                            <div class="lefttext">
+                                                <div class="Mapview">
+                                                               <a href="Index.html">List View</a>
+                                                </div>
+                                                <div class="filter">
+                                                                FILTERS:
+                                                </div>
+                                                <div class="options">
+                                                                    <label><br>
+                                                                            <input type="checkbox" id="multi" onchange="carsearchbar()">
+                                                                                                Multi Story
+                                                                    </label><br>
+                                                                    <label>
+                                                                            <input type="checkbox" id="surface" onchange="carsearchbar()">
+                                                                                                Surface
+                                                                    </label><br>
+                                                                    <label>
+                                                                            <input type="checkbox" id="onstreet" onchange="carsearchbar()">
+                                                                                                Underground
+                                                                    </label><br>
+                                                                    <label>
+                                                                            <input type="checkbox" id="camera" onchange="carsearchbar()">
+                                                                                                camera
+                                                                    </label><br>                                                                                                                                   
+                                                </div>
+                            </div>
+        </div>
+        <br>
+        <center style="font-size: 20px;" >
+                                       <u>MAP VIEW</u>
+        </center>
+        <br>
+        <center>
+                <p>
+                    Select filters or search to see available car parks
+                </p>
+        </center>
+        <center>
+        <div id="map" ></div>
+        </center>
+        <div class="results" >
+            <button onclick="
+                            document.getElementById('searchbar').value='';
+                            document.getElementById('multi').checked=false;
+                            document.getElementById('surface').checked=false;
+                            document.getElementById('onstreet').checked=false;
+                            document.getElementById('camera').checked=false;
+                            carsearchbar();">
+                            View All Results</button>
+        </div>
+    </body>  
+</html>                
