@@ -3,11 +3,20 @@
 ## User Needs
 
 ### User stories
-TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
-    Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
+- As a car driver, i would want to serach for car parks by name or location to find quick and secure parking in bristol.
+- As a car driver, i want to find car parks in bristol by a type of filter so i can find the correct parking for my demands.
+- As a car driver, i want to see how many avaliable spaces the car park has so that i can choose one with a good amount of parking spots.
+- As a car driver, i want to locate a car park that minimises my walking to my actual destinanation.
+- As a car driver, i want to locate the operating times of a car park so i can determine if the hours the car park is opened resonates with the times that the car is park.
+- As a car driver, i want to know whether a car park has CCTV to ease any suspicions and help me feel secure in my car being kept safe.
+- As a car driver, i want to see all car parks in bristol without filters so i can choose from all available options. 
 
 ### Actors
-TODO: List and describe the actors/users for this product.
+| Actor | Description |
+| ----- | ----------- |
+| User (Driver) | The main customer that uses the web application. A motorist driving in or around Bristol who needs to find a car park to leave their vehicle for an amount of time. They interact with the web interface via a desktop or mobile browser. |
+| Bristol Open Data API | An outside platform that delivers car park data. Not a end user but interacts with the platform by responding to HTTP requests with JSON data. |
+| Browser Geolocation API | An integrated browser service that retrives the user's live location when permission is granted.
 
 ### Use Cases
 TODO: Describe each use case (at least one per team member).
@@ -16,13 +25,13 @@ TODO: Describe each use case (at least one per team member).
 
 | TODO: USE-CASE ID e.g. UC1, UC2, ... | TODO: USE-CASE NAME | 
 | -------------------------------------- | ------------------- |
-| **Description** | TODO: Goal to be achieved by use case and sources for requirement |
-| **Actors** | TODO: List of actors involved in use case |
-| **Assumptions** | TODO: Pre/post-conditions if any</td></tr>
-| **Steps** | TODO: Interactions between actors and system necessary to achieve goal |
-| **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
-| **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
-| **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
+| **Description** | The users puts in a name or area into the search bar to filter the displayed car parks in real time.  |
+| **Actors** | user |
+| **Assumptions** | Car park information has been loaded from the API and loaded on the page. |
+| **Steps** | 1. The user loads the web application. 2.The data from Bristol Open Data API. 3.User types a car park name (e.g "NCP") or area ("Clifton") into the search option. 4.The results list filters in actual time to display the right type of car park.  |
+| **Variations** | If there are no matches to a car park, a "NO CAR PARKS FOUND" message is shown |
+| **Non-functional** | Filtering search must update results within 100ms of each key stroke.  |
+| **Issues** | None |
 
 
 TODO: Your Use-Case diagram should include all use-cases.
