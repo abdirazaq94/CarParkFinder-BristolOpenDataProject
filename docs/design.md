@@ -1,9 +1,7 @@
 # Design
 
 ## User Interface design
-TODO: Specify and develop a user interface mockup using a wireframe.
 
-User Interface Design
 The user interface is specifically designed to be easily navigated and compatibale with all users regardless of technological experience. The application helps users navigate to find car parks in the city of Bristol, using a map and features such as a live count to show available spaces in car parks and interactive maps to help navigate around areas to find the location of the car park. 
 
 Design Considerations
@@ -17,7 +15,17 @@ Design Considerations
 
 
 Wireframe
-https://whimsical.com/map-442xFzuVBRbKH3K29SH9Lg
+
+<img width="664" height="801" alt="Screenshot 2026-04-23 at 09 51 20" src="https://github.com/user-attachments/assets/caf499d9-32bd-49a7-b964-5dfce1937c19" />
+<img width="664" height="444" alt="Screenshot 2026-04-23 at 09 50 57" src="https://github.com/user-attachments/assets/83b1f009-ee60-4e07-b82e-bcae247382b6" />
+<img width="927" height="644" alt="Screenshot 2026-04-23 at 09 50 27" src="https://github.com/user-attachments/assets/1a523f18-c227-4c6d-9696-c82983b4e6dd" />
+<img width="927" height="644" alt="Screenshot 2026-04-23 at 09 50 11" src="https://github.com/user-attachments/assets/694270ca-d50d-4c37-b6fe-a68965959232" />
+<img width="927" height="644" alt="Screenshot 2026-04-23 at 09 49 59" src="https://github.com/user-attachments/assets/73f872b7-8bc5-45ef-ab6c-4ad2f6d4a1f9" />
+<img width="927" height="644" alt="Screenshot 2026-04-23 at 09 49 47" src="https://github.com/user-attachments/assets/d7537be4-d1a0-4b97-8056-1e924eeb327c" />
+
+
+
+
 
 Wireframe Explained
 
@@ -37,9 +45,10 @@ Wireframe 5 - Car Park Finder: No results found
 The fifth wireframe addresses a key part of users experience by clearly communicating when no car parks have been matched by what they have put in their criteria. Instead of being greeted with a plain black screen or the web application crashing, the interface lets the user know by showing a message which states "No Car Parks Match Your Filters". Actionable options such as resetting filters or coming back to the search screen aid users to find a fix for thei issues. This approach lowers the chance off getting off the web application and encourges user interaction. 
 
 Wireframe 6 - Car Park Finder: Loading & Error State
-The sixth is intended to 
+The sixth is intended to demonstrate how the web application communicates its data findings to the user. A loading menu is displayed visualling indicationg that the web applucation is in the current process of tring to load car par data from the Open Data API. IF the data does not load, a error message will be displayed to direct the ser instead of making them feel confused. A retry button is also incorportaed to allow the user to attemp to load the data again. 
 
-
+Wireframe 7 - Favourites
+This wireframe above shows and displays a saved favourite feature, where the user can locate their go to parking spots in bristol. Each car park that is saved will show key information about the car park site itself and gives a quick overview withut needing to search for the desired car park again. A star emblem is used with this to visually indicate that the car park has been added to favourites. 
 
 
 
