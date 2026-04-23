@@ -16,6 +16,7 @@ The map view uses Leaflet.js loaded from a CDN (unpkg.com) and requires an inter
 
 ## Project Structure
 
+```
 CarParkFinder-BristolOpenDataProject/
 ├── html/
 │   ├── home.html           # Landing page — introduction and navigation
@@ -29,6 +30,8 @@ CarParkFinder-BristolOpenDataProject/
 │   ├── implementation.md   # Implementation: architecture, API docs, user guide
 │   └── testing.md          # Testing: test plan, traceability matrix
 └── readme.md               # Project overview and links to docs
+```
+
 
 TODO: Provide an outline of the project folder structure and the role of each file within it.
 provide a table listing the number of jslint warnings/reports for each module.
