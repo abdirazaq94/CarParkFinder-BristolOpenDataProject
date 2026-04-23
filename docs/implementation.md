@@ -100,6 +100,27 @@ The web application uses a three-page client-side architecture. All the pages sh
 | **`outputTable(stuff)`** | Stores features in `CarparkData`. For each feature, creates a Leaflet marker at coordinates from `geometry.x` and `geometry.y`, stores attributes as `marker.data`, adds to map, and binds a popup showing the car park name. |
 | **`markersearchbar()`** | Reads search input and checkbox states. Removes all markers from the map then re-adds only those matching the search and filter criteria. Triggered by the Search button. |
 
+{
+  "features": [
+    {
+      "attributes": {
+        "NAME": "Cabot Circus",
+        "AREA_NAME": "City Centre",
+        "TYPE_DESCRIPTION": "Multi Storey",
+        "NUMBER_LEVELS": "MSCP",
+        "SPACES": 2200,
+        "OPERATOR_NAME": "Bristol City Council",
+        "OPERATING_TIMES": "24 hours",
+        "CCTV": "Yes"
+      },
+      "geometry": {
+        "x": -2.5823,
+        "y": 51.4567
+      }
+    }
+  ]
+}
+
 ![Insert your component Diagram here](images/component.png)
 
 ## Bristol Open Data API
