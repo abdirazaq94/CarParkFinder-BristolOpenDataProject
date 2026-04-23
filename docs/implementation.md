@@ -121,14 +121,6 @@ The web application uses a three-page client-side architecture. All the pages sh
   ]
 }
 
-![Insert your component Diagram here](images/component.png)
-
-## Bristol Open Data API
-TODO: Document each query to Bristol Open Data
-
-![UML Class diagrams representing JSON query results](images/class1.png)
-TODO: Repeat as necessary
-
 # User guide
 
 User Guide
