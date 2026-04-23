@@ -130,4 +130,27 @@ TODO: Document each query to Bristol Open Data
 TODO: Repeat as necessary
 
 # User guide
-TODO: Explain how each use-case works by providing step-by-step screenshots for each use-case. This should be based on a tested scenario.
+
+User Guide
+Home Page (home.html)
+
+Open home.html in a web browser.
+Read the introduction to the application.
+Click Find Your Car Park to go to the list view.
+
+List View (index.html)
+
+Car park data loads automatically — "Loading list..." appears while fetching.
+All Bristol car parks are shown in the results table once loaded.
+Search: Type a name or area in the search box and click Search.
+Filter: Tick any combination of Multi Storey, Surface, Underground, or Camera — results update instantly.
+Map View: Click Map View in the left sidebar to switch to the map.
+Reset: Click View All Results to clear search and filters and show all car parks.
+
+Map View (map.html)
+
+Car parks load automatically as pins on an OpenStreetMap centred on Bristol.
+Click any pin to see the car park name in a popup.
+Search/Filter: Use the same controls — type a search term or tick filters and click Search to show/hide pins.
+List View: Click List View in the left sidebar to switch back.
+Reset: Click View All Results to reset and show all pins.
