@@ -1,9 +1,4 @@
-# Testing
 
-# Testing
-
-
-## Test Plan
 # Testing
 
 ## Test Plan
@@ -206,7 +201,7 @@ The Car Park Finder application was tested manually using a structured test plan
 | Actual Result | Both links navigated correctly. |
 | Status | Pass |
 
----
+
 
 ## Requirements Traceability Matrix
 
@@ -222,13 +217,3 @@ The Car Park Finder application was tested manually using a structured test plan
 | UC3 | FR8 | TC12, TC13, TC14 | Map loads, shows pins, filters by search | Pass |
 | UC4 | FR10 | TC11 | View All Results resets search and filters | Pass |
 | UC1 | FR1 | TC15 | Navigation between list and map views works | Pass |
-TODO: Describe any manual and automated (unit) tests. Uniquely identify each test case. Include prerequisites and test data.
-
-Test Runs
-TODO: For each test described above, indicate the current status. 
-Create a requirements traceability matrix to validate the completeness of the product.
-
-| Use-Case ID | Requirement ID | Test Case | Status |
-| ----------- | -------------- | --------- | ------ |
-
-TODO: Add rows for each test, current status is eg. pass/fail
