@@ -53,4 +53,3 @@ The following items are out of scope:
 - Processing of payment for the booking.
 - Backend server and databases.
 
-![Insert your Context Diagram Here](images/context.png)
