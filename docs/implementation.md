@@ -64,6 +64,20 @@ The warnings in both modules are predominantly stylistic — trailing whitespace
 | **v0.8** | `home.html` created. Hero section, feature cards, about section, and footer. Navigation between all three pages via links and buttons. |
 | **v1.0** | Final version submitted. All pages link correctly. Shared stylesheet applied across all pages. |
 
+
+Bristol Open Data API
+Endpoint
+GET https://maps2.bristol.gov.uk/server2/rest/services/ext/ll_transport/MapServer/5/query
+
+## Query Parameters
+
+| Parameter | Value | Description |
+| --------- | ----- | ----------- |
+| `where` | `1=1` | Returns all records |
+| `outFields` | `NAME,NUMBER_LEVELS,AREA_NAME,OPERATOR_NAME,SPACES,OPERATING_TIMES,TYPE_DESCRIPTION,CCTV` | Fields to include |
+| `outSR` | `4326` | Spatial reference — WGS84 lat/lng |
+| `f` | `json` | Response format |
+
 ## Software Architecture
 
 The web application uses a three-page client-side architecture. All the pages share the same stylesheet. Index.html & Map.html separately fetch from the same Open data website. 
